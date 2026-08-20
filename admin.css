@@ -1,0 +1,297 @@
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+
+}
+
+
+
+body{
+
+background:#f5f7fb;
+
+color:#333;
+
+}
+
+
+
+
+
+header{
+
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+
+padding:20px 8%;
+
+
+background:white;
+
+
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+
+
+}
+
+
+
+
+.logo{
+
+
+font-size:28px;
+
+
+font-weight:700;
+
+
+color:#3f51b5;
+
+
+}
+
+
+
+
+header a{
+
+
+text-decoration:none;
+
+
+color:#3f51b5;
+
+
+font-weight:bold;
+
+
+}
+
+
+
+
+
+.admin-dashboard{
+
+
+padding:60px 8%;
+
+
+display:grid;
+
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(250px,1fr));
+
+
+gap:30px;
+
+
+}
+
+
+
+
+
+
+
+.admin-card{
+
+
+background:white;
+
+
+padding:40px;
+
+
+border-radius:25px;
+
+
+text-align:center;
+
+
+box-shadow:
+
+0 10px 25px rgba(0,0,0,.1);
+
+
+transition:.3s;
+
+
+}
+
+
+
+
+
+.admin-card:hover{
+
+
+transform:translateY(-10px);
+
+
+}
+
+
+
+
+
+.admin-card h2{
+
+
+color:#3f51b5;
+
+
+margin-bottom:20px;
+
+
+}
+
+
+
+
+
+.admin-card h1{
+
+
+font-size:45px;
+
+
+}
+
+
+
+
+
+
+
+.booking-section{
+
+
+padding:50px 8%;
+
+
+}
+
+
+
+
+.booking-section h2{
+
+
+text-align:center;
+
+
+font-size:35px;
+
+
+color:#3f51b5;
+
+
+margin-bottom:30px;
+
+
+}
+
+
+
+
+
+
+
+.booking-card{
+
+
+background:white;
+
+
+padding:25px;
+
+
+margin:15px 0;
+
+
+border-radius:20px;
+
+
+box-shadow:
+
+0 10px 20px rgba(0,0,0,.1);
+
+
+}
+
+
+
+.booking-card h3{
+
+
+color:#3f51b5;
+
+
+}
+
+
+
+
+.booking-card p{
+
+
+margin:8px 0;
+
+
+}
+
+.delete-all-btn{
+
+    margin:20px 0;
+
+    padding:13px 25px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#e53935;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+    box-shadow:0 8px 20px rgba(229,57,53,0.25);
+
+}
+
+
+.delete-all-btn:hover{
+
+    background:#c62828;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(229,57,53,0.35);
+
+}
+
+
+.delete-all-btn:active{
+
+    transform:scale(0.96);
+
+}

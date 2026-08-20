@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Owner Dashboard - HomeRent</title>
+
+<link rel="stylesheet" href="owner.css">
+
+</head>
+<script>
+
+if(localStorage.getItem("isLogin") !== "true"){
+
+window.location.href="login.html";
+
+}
+
+</script>
+
+
+<body>
+
+
+<header>
+
+
+<div class="logo">
+🏠 Homezy Owner
+</div>
+
+
+<a href="index.html">
+Home
+</a>
+
+
+</header>
+
+
+
+
+
+<section class="owner-dashboard">
+
+
+<div class="owner-card">
+
+
+<h1>
+🏠 Add Property
+</h1>
+
+
+
+<input 
+type="text"
+id="propertyName"
+placeholder="Property Name">
+
+
+
+<input 
+type="text"
+id="location"
+placeholder="Location">
+
+
+<input 
+type="text"
+id="ownerName"
+placeholder="Owner Name">
+
+
+<input 
+type="text"
+id="ownerPhone"
+placeholder="Owner Phone Number">
+
+
+<select id="type">
+
+
+<option>
+Apartment
+</option>
+
+
+<option>
+Villa
+</option>
+
+
+<option>
+House
+</option>
+
+
+</select>
+
+
+
+<input 
+type="number"
+id="price"
+placeholder="Rent Price">
+
+<input 
+type="text"
+id="image"
+placeholder="Property Image URL">
+
+
+
+
+
+<button onclick="addProperty()">
+
+Add Property
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+<div class="owner-card">
+
+
+<h2>
+My Added Properties
+</h2>
+
+
+<div id="ownerProperties">
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<script src="owner.js"></script>
+
+
+</body>
+
+</html>

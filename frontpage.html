@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>HomeRent - Find Your Home</title>
+
+<link rel="stylesheet" href="frontpage.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+
+<header>
+
+<div class="logo">
+🏠 Homezy
+</div>
+
+
+<nav>
+
+<a href="frontpage.html">
+Home
+</a>
+
+
+<a href="properties.html">
+Properties
+</a>
+
+
+<a href="about.html">
+About
+</a>
+
+
+<a href="contact.html">
+Contact
+</a>
+
+
+<a href="wishlist.html">
+❤️ Wishlist
+</a>
+
+
+<a href="index.html" class="btn">
+Login
+</a>
+
+<a href="owner.html">
+🏠 Owner
+</a>
+
+<a href="admin.html">
+⚙️ Admin
+</a>
+
+
+</nav>
+
+</header>
+
+
+
+<section class="hero">
+
+
+<div class="overlay">
+
+
+<h1>
+Find Your Dream Home
+</h1>
+
+
+<p>
+Search thousands of rental homes instantly
+</p>
+
+
+
+<div class="search-box">
+
+
+<input 
+id="location"
+type="text"
+placeholder="Search Location">
+
+
+
+<select id="type">
+
+<option value="Apartment">
+Apartment
+</option>
+
+
+<option value="Villa">
+Villa
+</option>
+
+
+<option value="House">
+House
+</option>
+
+
+</select>
+
+
+
+<button onclick="searchHome()">
+
+Search
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="about-home">
+
+
+<h2>
+Why Choose HomeRent?
+</h2>
+
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h1>🏠</h1>
+
+<h3>
+Verified Homes
+</h3>
+
+<p>
+100% trusted rental houses
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h1>💰</h1>
+
+<h3>
+Best Price
+</h3>
+
+<p>
+Affordable rental options
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h1>🔒</h1>
+
+<h3>
+Secure Booking
+</h3>
+
+<p>
+Safe house booking system
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<footer>
+
+
+
+<h3>
+Homezy
+</h3>
+
+<p>
+Find your perfect home easily
+</p>
+
+</footer>
+<div class="login-box" id="loginBox">
+
+
+<div class="login-content">
+
+
+<span onclick="closeLogin()">×</span>
+
+
+<h2>
+User Login
+</h2>
+
+
+<input 
+type="email"
+id="loginEmail"
+placeholder="Email">
+
+
+<input 
+type="password"
+id="loginPassword"
+placeholder="Password">
+
+
+
+<button onclick="loginUser()">
+Login
+</button>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+<script src="frontpage.js"></script>
+
+</body>
+</html>

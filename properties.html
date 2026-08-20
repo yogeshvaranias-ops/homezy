@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Properties - HomeRent</title>
+
+<link rel="stylesheet" href="properties.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+
+<div class="logo">
+🏠 Homezy
+</div>
+
+
+
+<nav>
+
+<a href="frontpage.html">
+Home
+</a>
+
+<a href="properties.html">
+Properties
+</a>
+
+<a href="about.html">
+About
+</a>
+
+<a href="contact.html">
+Contact
+</a>
+
+<a href="wishlist.html">
+❤️ Wishlist
+</a>
+
+</nav>
+
+</header>
+
+
+
+
+
+
+
+<section class="property-hero">
+
+
+<h1>
+Find Your Perfect Home
+</h1>
+
+
+<p>
+Choose from verified rental properties
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="filter-section">
+
+
+<h2>
+Search Properties
+</h2>
+
+
+
+<div class="filter-box">
+
+
+<input 
+type="text"
+id="location"
+placeholder="Search Location">
+
+
+
+<select id="type">
+
+
+<option value="">
+All Types
+</option>
+
+
+<option>
+Apartment
+</option>
+
+
+<option>
+Villa
+</option>
+
+
+<option>
+House
+</option>
+
+
+</select>
+
+
+
+
+<select id="price">
+
+
+<option value="">
+All Price
+</option>
+
+
+<option value="15000">
+Below ₹15000
+</option>
+
+
+<option value="25000">
+Below ₹25000
+</option>
+
+
+<option value="30000">
+Below ₹30000
+</option>
+
+
+</select>
+
+
+
+<button onclick="filterProperty()">
+
+Search
+
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="properties">
+
+
+<h2>
+Available Homes
+</h2>
+
+
+
+<div class="property-grid" id="propertyList">
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<footer>
+
+<p>
+© 2026 Homezy | Smart Rental Platform
+</p>
+
+</footer>
+
+<div class="booking-box" id="bookingBox">
+
+
+<div class="booking-card">
+
+
+<span onclick="closeBooking()">
+×
+</span>
+
+
+<h2>
+🏠 Book Property
+</h2>
+
+
+
+<input 
+type="text"
+id="bookingName"
+placeholder="Your Name">
+
+
+
+<input 
+type="text"
+id="bookingMobile"
+placeholder="Mobile Number">
+
+
+
+<input 
+type="date"
+id="bookingDate">
+
+
+
+<button onclick="confirmBooking()">
+
+Confirm Booking
+
+</button>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<script src="properties.js"></script>
+
+
+</body>
+
+</html>

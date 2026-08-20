@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard - HomeRent</title>
+
+<link rel="stylesheet" href="admin.css">
+
+</head>
+
+<script>
+
+if(localStorage.getItem("isLogin") !== "true"){
+
+window.location.href="login.html";
+
+}
+
+</script>
+
+
+<body>
+    
+
+
+<header>
+
+
+<div class="logo">
+🏠 Homezy Admin
+</div>
+
+
+<a href="frontpage.html">
+Home
+</a>
+
+
+</header>
+
+
+
+
+<section class="admin-dashboard">
+
+
+
+<div class="admin-card">
+
+<h2>
+👥 Users
+</h2>
+
+<h1 id="userCount">
+0
+</h1>
+
+</div>
+
+
+
+
+<div class="admin-card">
+
+<h2>
+🏠 Properties
+</h2>
+
+<h1 id="propertyCount">
+0
+</h1>
+
+</div>
+
+
+
+
+<div class="admin-card">
+
+<h2>
+📅 Bookings
+</h2>
+
+<h1 id="bookingCount">
+0
+</h1>
+
+</div>
+
+
+
+
+</section>
+
+
+
+
+
+<section class="booking-section">
+
+
+<h2>
+All Bookings
+</h2>
+
+<button onclick="deleteAllBookings()" class="delete-all-btn">
+    🗑️ Delete All Bookings
+</button>
+
+
+<div id="allBookings">
+
+</div>
+
+
+</section>
+
+
+
+
+<script src="admin.js"></script>
+
+</body>
+
+</html>

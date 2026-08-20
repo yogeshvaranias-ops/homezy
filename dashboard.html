@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>User Dashboard - HomeRent</title>
+
+<link rel="stylesheet" href="dashboard.css">
+
+</head>
+
+<script>
+
+if(localStorage.getItem("isLogin") !== "true"){
+
+window.location.href="login.html";
+
+}
+
+</script>
+
+
+<body>
+
+
+
+<header>
+
+<div class="logo">
+🏠 Homezy
+</div>
+
+
+<a href="frontpage.html">
+Home
+</a>
+
+
+</header>
+
+
+
+
+<section class="dashboard">
+
+
+<div class="profile-card">
+
+
+<h1>
+👤 User Profile
+</h1>
+
+
+<h2 id="userName">
+</h2>
+
+
+<p id="userEmail">
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="dashboard-box">
+
+
+<h2>
+❤️ Wishlist
+</h2>
+
+
+<p>
+Saved Properties:
+<span id="wishlistCount">
+0
+</span>
+
+</p>
+
+
+<a href="wishlist.html">
+View Wishlist
+</a>
+
+
+</div>
+
+
+
+
+
+
+<div class="dashboard-box">
+
+
+<h2>
+🏠 My Bookings
+</h2>
+
+
+<div id="bookingList">
+
+</div>
+
+
+</div>
+
+
+
+
+
+<button onclick="logout()">
+
+Logout
+
+</button>
+
+
+</section>
+
+
+
+
+
+<script src="dashboard.js"></script>
+
+</script>
+
+
+</body>
+
+</html>
