@@ -79,29 +79,14 @@ wishlist.length;
 
 }
 
-
-
-
-
-
-
 function logout(){
 
+    localStorage.removeItem("userData");
+    localStorage.removeItem("userEmail");
 
-localStorage.removeItem("userData");
+    alert("👋 Logout Successfully");
 
-
-localStorage.removeItem("userEmail");
-
-
-
-alert("👋 Logout Successfully");
-
-
-
-window.location.href="login.html";
-
-
+    window.location.href = "index.html";
 }
 
 
