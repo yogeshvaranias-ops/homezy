@@ -56,13 +56,6 @@ document.getElementById("userEmail").innerHTML =
 
 }
 
-
-
-
-
-
-
-
 function loadWishlistCount(){
 
 
@@ -83,8 +76,6 @@ function logout(){
 
     localStorage.removeItem("userData");
     localStorage.removeItem("userEmail");
-
-    alert("👋 Logout Successfully");
 
     window.location.href = "index.html";
 }
